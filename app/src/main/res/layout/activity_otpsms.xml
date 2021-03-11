@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".otpsms"
+    android:background="#96E6DC"
+    android:padding="10dp"
+    android:orientation="vertical">
+
+
+    <EditText
+        android:id="@+id/otp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="verificiation code phone"
+        android:layout_marginTop="250dp"
+        android:textColor="@color/black"
+        />
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Submit"
+        android:background="#4ABDEB"
+        android:layout_marginTop="20dp"
+        ></Button>
+
+</LinearLayout>

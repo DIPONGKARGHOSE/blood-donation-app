@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".post"
+    android:background="#7596A3EB"
+
+    android:orientation="vertical">
+    <TextView
+        android:layout_marginTop="10dp"        android:id="@+id/text1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Blood Donation Post"
+        android:gravity="center"
+        android:textColor="#4B4F56"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/text1"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_below="@+id/text1"
+        android:id="@+id/la1"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+            android:orientation="vertical"
+
+        >
+
+
+        <TextView
+
+            android:id="@+id/bag"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:background="#6F999999"
+            android:gravity="left"
+            android:hint="how many blood bag are needed:"
+            android:textSize="20dp"
+            android:textStyle="bold"
+
+            />
+
+        <Spinner
+
+            android:id="@+id/sp"
+            android:layout_width="110dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="220dp" />
+            <TextView
+                android:layout_below="@+id/bag"
+                android:layout_weight="1"
+                android:id="@+id/bloodgroup"
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:background="#6F999999"
+                android:gravity="center"
+                android:hint="Blood Group:"
+                android:textSize="20dp"
+                android:textStyle="bold"
+
+
+
+                />
+
+            <Spinner
+
+                android:layout_below="@+id/bag"
+                android:layout_weight="1"
+                android:id="@+id/sp1"
+                android:layout_width="110dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="220dp" />
+            <EditText
+
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:id="@+id/place"
+                android:hint="Blood Donation Place"
+                android:layout_below="@+id/bloodgroup"
+                />
+
+            <EditText
+
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:id="@+id/type"
+                android:hint=" patient type"
+                android:layout_below="@+id/place"
+                />
+            <TextView
+
+                android:id="@+id/km"
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:background="#6F999999"
+                android:gravity="left"
+                android:hint="how many kilometre you want send sms in Blood Doner:"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_below="@+id/type"
+
+            />
+
+            <Spinner
+                android:layout_below="@+id/type"
+                android:id="@+id/sp3"
+                android:layout_width="110dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="220dp" />
+            <Button
+                android:background="#AD9B6E"
+                android:text="Post"
+                android:layout_marginTop="40dp"
+                android:layout_width="100dp"
+                android:layout_height="80dp"
+                android:id="@+id/post"
+                android:layout_below="@id/km"
+                android:layout_marginLeft="150dp"
+                />
+
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+</RelativeLayout>
